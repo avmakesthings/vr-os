@@ -56,25 +56,25 @@ public class PointerManager : MonoBehaviour {
     //TO-FIX - filed bug with thestonefox.  pointer doesn't draw onEnable, only when trigger is pressed.
     private void DoLaserPointerIn(object sender, DestinationMarkerEventArgs e)
     {
-        print("DoLaserPointerIn");
+        //print("DoLaserPointerIn");
         laserPointerRenderer.invalidCollisionColor = new Color(255, 255, 255, 1f);
     }
 
     private void DoLaserPointerOut(object sender, DestinationMarkerEventArgs e)
     {
-        print("DoLaserPointerOut");
+        //print("DoLaserPointerOut");
         laserPointerRenderer.invalidCollisionColor = new Color(255, 255, 255, 0f);
 
     }
 
     private void DoTeleportPointerIn(object sender, DestinationMarkerEventArgs e)
     {
-        print("DoTeleportPointerIn");
+        //print("DoTeleportPointerIn");
     }
 
     private void DoTeleportPointerOut(object sender, DestinationMarkerEventArgs e)
     {
-        print("DoTeleportPointerOut");
+        //print("DoTeleportPointerOut");
     }
 
 
