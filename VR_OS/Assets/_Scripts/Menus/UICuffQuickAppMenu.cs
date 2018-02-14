@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class UICuffQuickAppMenu : MonoBehaviour {
 
-    private static bool menuState = false; //menu active or inactive .. can use visibility 
-    //reference to the child meshes for layout
-
-
-	// Use this for initialization
-	void Start () {
-        //add layout logic 
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private bool menuState = false; 
 
     //toggle menu visibility
     public void toggleMenu()
