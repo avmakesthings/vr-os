@@ -10,6 +10,7 @@ public class PointerManager : MonoBehaviour {
 
     VRTK_Pointer laserPointer;
     VRTK_Pointer teleportPointer;
+    VRTK_UIPointer uiPointer;
     VRTK_StraightPointerRenderer laserPointerRenderer;
     VRTK_BezierPointerRenderer teleportPointerRenderer;
 
@@ -23,6 +24,8 @@ public class PointerManager : MonoBehaviour {
         teleportPointerRenderer = GetComponent<VRTK_BezierPointerRenderer>();
 
         VRTK_Pointer[] pointers = GetComponents<VRTK_Pointer>();
+
+        uiPointer = GetComponent<VRTK_UIPointer>();
 
         foreach (VRTK_Pointer p in pointers) {
 
@@ -49,7 +52,8 @@ public class PointerManager : MonoBehaviour {
         laserPointer.DestinationMarkerExit += new DestinationMarkerEventHandler(DoLaserPointerOut);
         teleportPointer.DestinationMarkerEnter += new DestinationMarkerEventHandler(DoTeleportPointerIn);
         teleportPointer.DestinationMarkerExit += new DestinationMarkerEventHandler(DoTeleportPointerOut);
-
+        //uiPointer.UIPointerElementEnter += new UIPointerElementEnter(DoTeleportPointerIn);
+        //uiPointer.DestinationMarkerExit += new DestinationMarkerEventHandler(DoTeleportPointerOut);
 
     }
 
