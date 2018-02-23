@@ -5,9 +5,6 @@ sceneSetups:
 - path: Assets/VRTK/Examples/019_Controller_InteractingWithPointer.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/VRTK/Examples/034_Controls_InteractingWithUnityUI.unity
-  isLoaded: 0
-  isActive: 0
 - path: Assets/VRTK/Examples/025_Controls_Overview.unity
   isLoaded: 0
   isActive: 0
